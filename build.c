@@ -336,6 +336,8 @@ __cdecl main(
     InitializeCriticalSection(&TTYCriticalSection);
 
     s1 = getenv("COMSPEC");
+	unsigned int _osver;
+
     if (s1) {
         cmdexe = s1;
     } else {
